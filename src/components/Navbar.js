@@ -6,8 +6,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
 // import "bootstrap/dist/js/bootstrap.bundle.min"
 
-
-
 export default function Navbar(props) {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
