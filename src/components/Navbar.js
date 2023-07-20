@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types'
+
 // import './Navbar.css';
 
 // Bootstrap CSS
@@ -10,9 +12,9 @@ export default function Navbar(props) {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="src/images/my.jpg" width="30" height="30" class="d-inline-block align-top" alt=""/>
-                    {props.title}
+                <a className="navbar-brand" href="#">
+                    <img src="src\images\my.jpg" width="30" height="30" className="d-inline-block align-top" alt=""/>
+                    {props.firstcolumn}
                 </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -23,18 +25,23 @@ export default function Navbar(props) {
                         <a className="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link" href="#">Features</a>
+                        <a className="nav-link" href="#">{props.secondcolumn}</a>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link" href="#">{props.about}</a>
+                        <a className="nav-link" href="#">{props.thirdcolumn}</a>
                         </li>
                     </ul>
                     <span className="navbar-text">
-                        Navbar text with an inline element
+                        Fresher Software Developer 2023 Gaduated<br></br>
+                        Skilled in Java, C++, HTML, CSS, JavaScript, Mongodb 
                     </span>
                 </div>
             </div>
         </nav>
         
     )
+}
+
+Navbar.propTypes = {
+    firstcolumn: PropTypes.string
 }
