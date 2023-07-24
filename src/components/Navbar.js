@@ -10,7 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Navbar(props) {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">
                     <img src="src\images\my.jpg" width="30" height="30" className="d-inline-block align-top" alt=""/>
