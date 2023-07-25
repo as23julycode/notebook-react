@@ -10,7 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Navbar(props) {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">
                     <img src="src\images\my.jpg" width="30" height="30" className="d-inline-block align-top" alt=""/>
@@ -35,6 +35,11 @@ export default function Navbar(props) {
                         Fresher Software Developer 2023 Gaduated<br></br>
                         Skilled in Java, C++, HTML, CSS, JavaScript, Mongodb 
                     </span>
+                    <div className={`form-check form-switch text-${props.mode === 'light'?'dark' : 'light'}`}>
+                        <input className="form-check-input" onClick= {props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
+                        <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Enable Dark Mode</label>
+                    </div>
+                    
                 </div>
             </div>
         </nav>
