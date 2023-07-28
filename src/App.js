@@ -18,7 +18,7 @@ function App() {
   const toggleMode = () => {
     if(mode === 'light'){
       setMode('dark');
-      document.body.style.backgroundColor = 'blue';
+      document.body.style.backgroundColor = '#282854';
     }
     else{
       setMode('light');
@@ -32,7 +32,7 @@ function App() {
 
     <div className='container my-3'>
         <Routes>
-          <Route path="/about" element={<About />}/>
+          <Route path="/about" element={<About mode = {mode}/>}/>
           <Route path="/" element = {<TextForm heading="Enter text to analyse" mode={mode}/>}/>
         </Routes>
     </div>
