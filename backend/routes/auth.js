@@ -26,9 +26,7 @@ router.post("/createuser",[
     try {
       let user = await User.findOne({ email: req.body.email });
       if (user) {
-        return res
-          .status(400)
-          .json({ error: "user with email Already registered" });
+        return res.status(400).json({ error: "user with email Already registered" });
       }
       const salt = await bcrypt.genSalt(10);
       const secpassword = await bcrypt.hash(req.body.password, salt);
