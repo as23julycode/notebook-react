@@ -1,11 +1,16 @@
 const mongoose = require('mongoose');
+const { Schema } = mongoose;
 
 const NotesSchema = new Schema({
+    user:{
+        type: mongoose.Schema.ObjectId,
+        ref: 'user'
+    },
     title : {
         type: 'string',
         require : true
     },
-    discription : {
+    description : {
         type : 'string',
         require: true,
     },
@@ -14,7 +19,7 @@ const NotesSchema = new Schema({
         debugger: "General"
     },
     date : {
-        type : date,
+        type : "date",
         default: Date.now
     },
 });
