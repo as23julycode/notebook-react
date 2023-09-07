@@ -28,9 +28,9 @@ export const AddNote = () => {
             <label htmlFor="description">Description</label>
             <input type="text" className="form-control" id="description" onChange={onChange} name="description" placeholder="Description"/>
           </div>
-          <div className="form-group form-check">
-            <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
-            <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
+          <div className="form-group">
+            <label htmlFor="tag">Tag</label>
+            <input type="text" className="form-control" id="tag" onChange={onChange} name="tag" placeholder="Tag"/>
           </div>
           <button type="submit" className="btn btn-primary" onClick={NOTEADD}>Add Note</button>
         </form>
