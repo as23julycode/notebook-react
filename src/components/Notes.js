@@ -23,7 +23,7 @@ export const Notes = () => {
 
   const NOTEADD = (e) => {
     console.log("Updating the node",note)
-    editNote()
+    editNote(note.id, note.etitle, note.edescription, note.etag)
     refClose.current.click();
   }
 

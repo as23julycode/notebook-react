@@ -76,15 +76,17 @@ const NoteState = (props) => {
     });
 
     // clint side me edit karne ke lea logic
-
-    for (let index = 0; index < notes.length; index++) {
-      const element = notes[index];
+    let newNotes = JSON.parse(JSON.stringify(notes));
+    for (let index = 0; index < newNotes.length; index++) {
+      const element = newNotes[index];
       if (element._id === id) {
-        element.title = title;
-        element.description = description;
-        element.tag = tag;
+        newNotes[index].title = title;
+        newNotes[index].description = description;
+        newNotes[index].tag = tag;
+        break;
       }
     }
+    setNotes(newNotes);
   };
   return (
     // single curly braces me pass nahi kiaya kyu ki javascript objec thai ye islea hame ye duble me pass karna pada
