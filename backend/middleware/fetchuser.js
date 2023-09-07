@@ -2,7 +2,8 @@ var jwt = require("jsonwebtoken");
 const JWT_SECRET = "haiadityasingh";
 
 const fetchuser = (req, res, next) => {
-    const token = req.header("auth-token")
+    // Get the user from the jwt token and add id to req object
+    const token = req.header('auth-token');
     if (!token) {
         res.status(401).send({error :"Invalid token"})
     }
@@ -11,7 +12,7 @@ const fetchuser = (req, res, next) => {
         req.user = data.user;
         next();
     } catch (error) {
-        res.status(401).send({error :"Invalid token"})
+       res.status(401).send({error :"Invalid token"})
     }
 }
 
