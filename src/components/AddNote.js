@@ -5,11 +5,12 @@ import noteContext from "../context/notes/NoteContext";
 export const AddNote = () => {
     const context = useContext(noteContext);
     const {addNote} = context;
-    const [note, setNote] = useState({title:"", description:"", tag:"default"})
+    const [note, setNote] = useState({title:"", description:"", tag:""})
 
     const NOTEADD = (e) => {
       e.preventDefault();
       addNote(note.title, note.description, note.tag);
+      setNote({title:"", description:"", tag:""})
     }
 
     const onChange = (e) => {
@@ -22,15 +23,15 @@ export const AddNote = () => {
         <form>
           <div className="form-group">
             <label htmlFor="title">Title</label>
-            <input type="text" className="form-control" id="title" name="title" aria-describedby="emailHelp" onChange={onChange} placeholder="Title"/>
+            <input type="text" className="form-control" id="title" name="title" aria-describedby="emailHelp" value={note.title} onChange={onChange} placeholder="Title"/>
           </div>
           <div className="form-group">
             <label htmlFor="description">Description</label>
-            <input type="text" className="form-control" id="description" onChange={onChange} name="description" placeholder="Description"/>
+            <input type="text" className="form-control" id="description" onChange={onChange} name="description" value={note.description} placeholder="Description"/>
           </div>
           <div className="form-group">
             <label htmlFor="tag">Tag</label>
-            <input type="text" className="form-control" id="tag" onChange={onChange} name="tag" placeholder="Tag"/>
+            <input type="text" className="form-control" id="tag" onChange={onChange} name="tag" value={note.tag} placeholder="Tag"/>
           </div>
           <button type="submit" className="btn btn-primary" onClick={NOTEADD}>Add Note</button>
         </form>
