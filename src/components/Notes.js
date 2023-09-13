@@ -72,6 +72,11 @@ export const Notes = () => {
       <div className="container my-3">
         <h2>Your Notes</h2>
         <div className="row my-2">
+          <div className="container col-md-6 offset-md-5">
+            <b>
+              {notes.length === 0 && 'Add a note to display'}
+            </b>
+          </div>
           {notes.map((note) => {
             return <Noteitem key={note._id} updateNote={updateNote} note={note} />;
           })}
