@@ -33,7 +33,10 @@ export const AddNote = () => {
             <label htmlFor="tag">Tag</label>
             <input type="text" className="form-control" id="tag" onChange={onChange} name="tag" value={note.tag} placeholder="Tag"/>
           </div>
-          <button type="submit" className="btn btn-primary" onClick={NOTEADD}>Add Note</button>
+          <div className="d-flex justify-content-center ">
+            <button type="submit" className="btn bg-primary shadow-lg p-3 mb-3 rounded" onClick={NOTEADD}>Add Note</button>
+          </div>
+          
         </form>
       </div>
     </div>

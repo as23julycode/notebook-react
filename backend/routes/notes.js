@@ -44,6 +44,7 @@ router.post('/addnote', fetchuser, [
     }
 );
 
+
 // Routes 3 : Update an excisting Notes using POST "/api/notes/updatenote/" Login Required
 router.put("/updatenote/:id", fetchuser, async (req, res) => {
 
