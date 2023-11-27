@@ -22,7 +22,10 @@ const Navbar = () => {
   <div className="collapse navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav mr-auto">
       <li className="nav-item">
-        <Link className={`nav-link ${location.pathname==="/" ? "shadow-lg bg-primary rounded" :""}`} to="/">Home</Link>
+        <Link className={`nav-link ${location.pathname==="/index" ? "shadow-lg bg-primary rounded" :""}`} to="/index">Home</Link>
+      </li>
+      <li className="nav-item">
+        <Link className={`nav-link ${location.pathname==="/" ? "shadow-lg bg-primary rounded" :""}`} to="/">All Notes</Link>
       </li>
       <li className="nav-item">
         <Link className={`nav-link ${location.pathname==="/about" ? "shadow-lg bg-primary rounded" :""}`} to="/about">About</Link>

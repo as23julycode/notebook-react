@@ -33,6 +33,7 @@ const Signup = (props) => {
 }
   return (
     <div className='container'>
+      <h1 className="d-flex justify-content-center" style={{ color: "white" }}>Create Account</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="name" className="form-label">Name</label>

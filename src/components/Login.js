@@ -20,7 +20,7 @@ const Login = (props) => {
             // token save karke redirect kar denge history hook ka use karke
             localStorage.setItem('token', json.authtoken);
             props.showAlert("Successfully Logged In", "success")
-            history("/");
+            history("/index");
         }
         else{
             props.showAlert("Invalide Credential", "danger")

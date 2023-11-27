@@ -34,7 +34,7 @@ export const AddNote = () => {
             <input type="text" className="form-control" id="tag" onChange={onChange} name="tag" value={note.tag} placeholder="Tag"/>
           </div>
           <div className="d-flex justify-content-center ">
-            <button type="submit" className="btn bg-primary shadow-lg p-3 mb-3 rounded" onClick={NOTEADD}>Add Note</button>
+            <button button disabled= {note.title.length === 0 || note.description.length === 0  } type="submit" className="btn bg-primary shadow-lg p-3 mb-3 rounded" onClick={NOTEADD}>Add Note</button>
           </div>
           
         </form>

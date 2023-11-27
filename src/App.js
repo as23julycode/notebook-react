@@ -7,6 +7,7 @@ import NoteState from "./context/notes/NoteState";
 import Notes from "./components/Notes";
 import Alert from "./components/Alert";
 import Login from "./components/Login";
+import Index from "./components/Index";
 import Signup from "./components/Signup";
 import { useState } from "react";
 
@@ -29,6 +30,7 @@ function App() {
           <Alert alert={alert} />
           <div className="container">
             <Routes>
+              <Route exact path="/index" element={<Index showAlert={showAlert}/>}/>
               <Route exact path="/" element={<Home showAlert={showAlert}/>} />
               <Route exact path="/about" element={<About showAlert={showAlert}/>} />
               <Route exact path="/notes" element={<Notes showAlert={showAlert}/>} />

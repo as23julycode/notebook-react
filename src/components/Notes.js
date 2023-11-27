@@ -41,9 +41,9 @@ export const Notes = () => {
   return (
     <>
       <AddNote />
-
+      {/* editing ke lea hai ye */}
       <button type="button" ref={ref} className="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
+        Editing
       </button>
 
 
