@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import awesome from '../image/about.png'
 import log from '../image/about2.jpg'
+import Footer from './Footer'
 
 export const About = () => {
   return (
@@ -50,6 +51,7 @@ export const About = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }

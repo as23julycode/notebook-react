@@ -17,7 +17,7 @@ export const Notes = () => {
     else{
       history("/login");
     }
-  }, []);
+  });
   const ref = useRef(null)
   const refClose = useRef(null)
   

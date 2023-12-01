@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import noteimg from '../image/inotebook.jpg'
 import DisplayNote from './DisplayNotes';
-import Signup from './Signup';
 import Footer from './Footer';
 
 

@@ -5,30 +5,30 @@ const Footer = () => {
     return (
         <div>
             {/* <!-- Footer --> */}
-            <footer class="page-footer font-small teal pt-4">
+            <footer className="page-footer font-small teal pt-4">
 
                 {/* <!-- Footer Text --> */}
-                <div class="container-fluid text-center text-md-left">
+                <div className="container-fluid text-center text-md-left">
 
                     {/* <!-- Grid row --> */}
-                    <div class="row">
+                    <div className="row">
 
                         {/* <!-- Grid column --> */}
-                        <div class="col-md-5 mt-md-0 mt-" style={{ color: "white" }}>
+                        <div className="col-md-5 mt-md-0 mt-" style={{ color: "white" }}>
 
                             {/* <!-- Content --> */}
-                            <h5 class="text-uppercase font-weight-bold"><span style={{ color: "#00ff00" }}>Cloud Notebook</span></h5>
+                            <h5 className="text-uppercase font-weight-bold"><span style={{ color: "#00ff00" }}>Cloud Notebook</span></h5>
                             <p>An online web platform where you can create, edit, upload, delete your notes/information privately and securely without any disturbancee</p>
 
                         </div>
                         {/* <!-- Grid column --> */}
 
-                        <div class="col-md-1 mx-auto">
+                        <div className="col-md-1 mx-auto">
 
                             {/* <!-- Links --> */}
-                            <h5 class="font-weight-bold text-uppercase mb-3">Links</h5>
+                            <h5 className="font-weight-bold text-uppercase mb-3">Links</h5>
 
-                            <ul class="list-unstyled">
+                            <ul className="list-unstyled">
                                 <li>
                                     <a href="#!">Link 1</a>
                                 </li>
@@ -48,8 +48,8 @@ const Footer = () => {
 
                         {/* <!-- Grid column --> */}
                         <div className="col-md-1 mx-auto mt-0">
-                        <h5 class="font-weight-bold text-uppercase mb-3">Links</h5>
-                        <ul class="list-unstyled mx-3 d-grid gap-3">
+                        <h5 className="font-weight-bold text-uppercase mb-3">Links</h5>
+                        <ul className="list-unstyled mx-3 d-grid gap-3">
                         <li> <Link to="/"><i className="fab fa-twitter fa-lg" style={{fontSize:'33px'}}></i></Link></li>
                         <li>  <Link to="/"><i className="fab fa-instagram fa-lg"  style={{fontSize:'33px'}}></i></Link></li>
                         <li>  <Link to="/"><i className="fab fa-linkedin-in fa-lg"  style={{fontSize:'33px'}}></i></Link></li>
@@ -65,7 +65,7 @@ const Footer = () => {
                 {/* <!-- Footer Text --> */}
 
                 {/* <!-- Copyright --> */}
-                <div class="footer-copyright text-center py-3" style={{ color: "white" }}>© 2023 Copyright:
+                <div className="footer-copyright text-center py-3" style={{ color: "white" }}>© 2023 Copyright:
                     <a href="/" style={{ color: "yellow" }}> Aditya Singh</a>
                 </div>
                 {/* <!-- Copyright -->/ */}

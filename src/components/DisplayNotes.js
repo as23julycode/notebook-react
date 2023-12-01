@@ -16,8 +16,8 @@ export const DisplayNote = () => {
         else {
             history("/login");
         }
-    }, []);
-    const ref = useRef(null)
+    });
+    const ref = useRef(null);
     const refClose = useRef(null)
 
     const [note, setNote] = useState({ id: "", etitle: "", edescription: "", etag: "" })
