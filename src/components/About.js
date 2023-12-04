@@ -23,7 +23,7 @@ export const About = () => {
                 you can also access your notes anywhere in your world, at anytime time . So dont forget to Create note because creating anything is always important
               </p>
               <div className="d-flex justify-content-center mt-3">
-                <Link className='btn btn-info' to='/' style={{ color: "White", textTransform: "none", fontFamily: "'Poppins', sans-serif", fontSize: "1.3rem" }}>Create New Note</Link>
+                <Link className='btn btn-info' to='/home' style={{ color: "White", textTransform: "none", fontFamily: "'Poppins', sans-serif", fontSize: "1.3rem" }}>Create New Note</Link>
               </div>
             </div>
             <div className="col-md-6">

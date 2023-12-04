@@ -21,7 +21,7 @@ const Signup = (props) => {
     if (json.success) {
       // token save karke redirect kar denge history hook ka use karke
       localStorage.setItem('token', json.authtoken);
-      history("/");
+      history("/home");
       props.showAlert("Successfull Created Account", "success")
     }
     else {

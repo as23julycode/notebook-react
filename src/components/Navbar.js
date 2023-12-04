@@ -25,7 +25,7 @@ const Navbar = () => {
         <Link className={`nav-link ${location.pathname==="/index" ? "shadow-lg bg-primary rounded" :""}`} to="/index">Home</Link>
       </li>
       <li className="nav-item">
-        <Link className={`nav-link ${location.pathname==="/" ? "shadow-lg bg-primary rounded" :""}`} to="/">All Notes</Link>
+        <Link className={`nav-link ${location.pathname==="/home" ? "shadow-lg bg-primary rounded" :""}`} to="/home">All Notes</Link>
       </li>
       <li className="nav-item">
         <Link className={`nav-link ${location.pathname==="/about" ? "shadow-lg bg-primary rounded" :""}`} to="/about">About</Link>
